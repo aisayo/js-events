@@ -22,7 +22,7 @@
 
 // Event gets passed to event handler as first parameter
 
-function handleClick(){
+function handleClick(event){
     console.log("this is using addEventListener")
     console.log('the event is:', event)
     console.log('the event type is:', event.type)

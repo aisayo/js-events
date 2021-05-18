@@ -1,6 +1,7 @@
 // Event Listeners
 
 // functions that bind a type of event to an element 
+// Event listeners are called only when the event happens in the context of the object they are registered on
 
 // Creating event listeners(there are a few ways, these are the two most common):
 
