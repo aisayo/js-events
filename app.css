@@ -41,8 +41,7 @@ img {
 }
 
 .poke-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(168, 17, 17, 0.2);
-}
+  box-shadow: 0 8px 16px 0 rgba(218, 31, 31, 0.685);}
 
 #poke-container {
   display: flex;
