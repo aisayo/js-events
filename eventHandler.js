@@ -1,7 +1,6 @@
 // An event handler is a function that will react on an event
 // Second argument of addEventListener is an event handler
-// Inside the event handler function,logic is used to perform some
-// type of dom manipulation. 
+// Inside the event handler function,logic is used to perform some type of dom manipulation. 
 
 // Event handler pattern:
 // 1. Select the element being manipulated
