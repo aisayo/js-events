@@ -1,5 +1,6 @@
 const pokeContainer = document.getElementById("poke-container");
 const pokeFormContainer = document.getElementById("poke-form-container");
+const pokeForm = document.getElementById('poke-form')
 
 function renderPoke(pokemon) {
   const pokeCard = document.createElement("div");
@@ -34,9 +35,31 @@ function increaseLike(e) {
   likesElement.textContent = parseInt(likesElement.textContent) + 1;
 }
 
+function createPoke(e){
+  e.preventDefault();
+  const pForm = e.target
+  const pokeName = pForm.querySelector('#name-input').value
+  const pokeImg = pForm.querySelector('#img-input').value
+
+  if (pokeName !== '' && pokeImg !== ''){
+    const poke = {
+      id: 7, // hard coded can be changed to  be more dynamic
+      name: pokeName,
+      img: pokeImg,
+      likes: 0
+    }
+    renderPoke(poke)
+    pokeForm.reset()
+  } else {
+    alert('Fill in the form!!!')
+  }
+  
+}
+
 function init() {
   pokemons.forEach(renderPoke);
   // pokemons.forEach((pokemon) => renderPoke(pokemon));
+  pokeForm.addEventListener('submit', createPoke)
 }
 
 init();
