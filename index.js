@@ -13,10 +13,14 @@ function renderPoke(pokemon) {
   const pokeName = document.createElement("h3");
   pokeName.textContent = pokemon.name;
   
-  const pokeLikes = document.createElement("h5");
-  pokeLikes.textContent = `Likes: ${pokemon.likes}`;
+  const pokeLikes = document.createElement("h3");
+  pokeLikes.textContent = 'Likes: ';
+  
+  const likesNum = document.createElement("h5");
+  likesNum.id = "like-num"
+  likesNum.textContent = pokemon.likes
 
-  pokeCard.append(pokeImg, pokeName, pokeLikes);
+  pokeCard.append(pokeImg, pokeName, pokeLikes, likesNum);
   pokeContainer.appendChild(pokeCard);
 }
 
