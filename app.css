@@ -37,7 +37,7 @@ img {
   float: left;
   text-align: center;
   width: 100px;
-  height: 200px;
+  height: 250px;
 }
 
 .poke-card:hover {
@@ -45,6 +45,40 @@ img {
 }
 
 #poke-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-left: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(228, 215, 42);
+}
+
+label {
+  color: rgb(83, 79, 79);
+}
+
+#poke-form-container {
+  margin-top: 25px;
   display: flex;
   justify-content: center;
 }
